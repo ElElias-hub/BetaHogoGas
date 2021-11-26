@@ -350,6 +350,10 @@ hr{
     }
 }
 
+.mapa{
+    width:"640";
+    height:"480";
+}
 
 .contenido_estaciones{
     scroll-snap-align: center;
@@ -450,22 +454,44 @@ hr{
 
   /**------------------- FACTURACIÓN ------------------**/
 
+
 @media (min-width: 768px){
     .boton--secundario{
-        margin-left: 90%;
+        margin-left: 70%;
+    }
+    .gasolinera{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
     }
 }
 
-.entrada__gas{
-    border-bottom: 1px solid var(--azulgris);
-    margin-bottom: 2rem;
+.gas__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
 }
 
-.entrada__gas:last-of-type{
-    border: none;
-    margin-bottom: 0;
+.gas__info{
+    font-weight: normal;
+}
+
+.gas_label,
+.gas__info{
+    font-size: 2rem;
 }
 
 .boton--secundario{
     background-color: var(--primario);
 }
+
+.gasolinera{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--primario);
+}
+.gasolinera:last-of-type{
+    border: none;
+}
+
+
+
+
