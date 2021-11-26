@@ -81,7 +81,7 @@ img{
 
 
 .header{
-    height: 90rem;
+    height: 92rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -91,6 +91,11 @@ img{
     text-align: center;
     color: var(--blanco);
     margin-top: 2rem;
+}
+
+.header_texto-titulo{
+    text-shadow: 0.1em 0.1em 0.10em #000;
+    text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -360,15 +365,19 @@ hr{
     }
 }
 
-/** contacto **/
+  /**------------------- CONTACTO ------------------**/
 
 .contacto-bg{
-    margin: -25rem auto 0 auto;
+    background-image: url(../img/banner02.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .formulario{
     background-color: var(--blanco);
-    margin: -11rem auto 0 auto;
+    margin: -20rem auto 0 auto;
     width: 95%;
     padding: 5rem;
 
@@ -417,9 +426,46 @@ hr{
 
 .boton:hover{
     cursor: pointer;
+    background-color: var(--secundario);
 }
 
 .boton--primario{
-    background-color: var(--negro);
+    background-color: var(--primario);
+}
 
+@media (min-width: 768px) {
+       .boton--primario{
+        margin-left: 90%;
+       }
+}
+
+.contacto__titulo{
+    text-align: center;
+    color: var(--blanco);
+    text-transform: uppercase;
+    margin-top: 3rem;
+    text-shadow: 0.1em 0.1em 0.10em #000
+}
+
+
+  /**------------------- FACTURACIÓN ------------------**/
+
+@media (min-width: 768px){
+    .boton--secundario{
+        margin-left: 90%;
+    }
+}
+
+.entrada__gas{
+    border-bottom: 1px solid var(--azulgris);
+    margin-bottom: 2rem;
+}
+
+.entrada__gas:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton--secundario{
+    background-color: var(--primario);
 }
