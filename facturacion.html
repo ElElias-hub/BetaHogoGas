@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FACTURACIÓN</title>
+    <link rel="icon" type="image/png" href="img/IconoHogoGroup.png">
 
     
     <meta name="description" content="Página web de Hogogas, empresa dedicada
@@ -14,6 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+    <!--Prefetch-->
+    <link rel="prefetch" href="http://hogoe13750.ddns.net:8088/controlGasfe/" as="document">
+    <!--Prefetch-->
+    <link rel="prefetch" href="http://hogoe13750.ddns.net:8080/ControlGasFE/FEinicio.aspx" as="document">
+
 
     <!--PRELOAD-->
     <link rel="preload" href="css/normalize.css" as="styyle">
@@ -21,6 +27,11 @@
      
     <link rel="preload" href="css/style.css as="styyle">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script: Animated entrance -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/fe6311b3c294cba469a3939f21603640522c41e5/aquamarine/js/animate-in.js'></script>
+    <!--Animated entrance -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -46,9 +57,9 @@
 
     <div class="contenedor">
 
-        <h3 class="centrar-texto">FACTURACIÓN</h3>
+        <!--<h3 class="centrar-texto  facturacion__titulo">FACTURACIÓN</h3>-->
         
-        <div class="gasolinera">
+        <div class="gasolinera" data-aos="fade-up">
 
             <div class="gas__imagen">
                 <picture>
@@ -57,10 +68,8 @@
             </div>
 
             <div class="gas__informacion">
-                <h4 class="no-margin">FACTURACIÓN CHALCO</h4>
-                <p class="gas__descripcion">
-                    Autopista México-Puebla, después la caseta de San Marcos.    
-                    HOGO GROUP CHALCO
+                <h4 class="no-margin facturacion__titulo">FACTURACIÓN CHALCO</h4>
+                <p class="gas__descripcion centrar-texto">   
                     Autopista México - Puebla 267, San Marcos Huixtoco, 56643 Méx.
                 </p>
                 <p class="gas_label">
@@ -68,14 +77,14 @@
                         DALE CLICK AL BOTON FACTURAR PARA PORDER REALIZAR TU FACTURA
                     </span>
                 </p>
-                <a href="" class="boton boton--secundario">facturar</a>
+                <a href="http://hogoe13750.ddns.net:8088/controlGasfe/" class="boton boton--secundario">facturar</a>
             </div><!--gasolinera info-fin-->
            
         </div><!--gasolinera-fin-->
 
         <br>
 
-        <div class="gasolinera">
+        <div class="gasolinera" data-aos="fade-down">
 
             <div class="gas__imagen">
                 <picture>
@@ -84,9 +93,8 @@
             </div>
 
             <div class="gas__informacion">
-                <h4 class="no-margin">FACTURACIÓN IXTAPALUCA</h4>
-                <p class="gas__descripcion">
-                    Autopista Puebla-México, antes de la caseta de San Marcos.
+                <h4 class="no-margin facturacion__titulo">FACTURACIÓN IXTAPALUCA</h4>
+                <p class="gas__descripcion centrar-texto">
                     Autopista México - Puebla 400, La Cañada, 56589 Jorge Jiménez Cantú, Méx.
                 </p>
                 <p class="gas_label">
@@ -94,7 +102,7 @@
                         DALE CLICK AL BOTON FACTURAR PARA PORDER REALIZAR TU FACTURA
                     </span>
                 </p>
-                <a href="" class="boton boton--secundario">facturar</a>
+                <a href="http://hogoe13750.ddns.net:8080/ControlGasFE/FEinicio.aspx" class="boton boton--secundario">facturar</a>
             </div><!--gasolinera info-fin-->
            
         </div><!--gasolinera-fin-->
@@ -138,6 +146,16 @@
         </div>
     </footer>
 
+
+
+    <!-- -https://michalsnik.github.io/aos/_- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+			easing: 'ease-out-back',
+			duration: 1200
+		});
+    </script>
 
     <script src="js/modernizr.js"></script>
     <script src="js/menu.js"></script>
