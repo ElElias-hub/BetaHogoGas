@@ -330,7 +330,7 @@ hr{
 
 
 .footer{
-    background-color: var(--negro);
+    background-color: #030c1d;
     padding-bottom:3rem;
     margin-top: 3rem;
 
@@ -380,7 +380,6 @@ hr{
     margin: -20rem auto 0 auto;
     width: 95%;
     padding: 5rem;
-
 }
 
 .campo{
