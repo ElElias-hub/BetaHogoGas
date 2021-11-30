@@ -326,11 +326,13 @@ hr{
     text-align: center;
     font-size: 1.3rem;
     color: var(--blanco);
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
 }
 
 
 .footer{
-    background-color: #030c1d;
+    background-color: var(--primario);
     padding-bottom:3rem;
     margin-top: 3rem;
 
@@ -446,6 +448,23 @@ hr{
     text-shadow: 0.1em 0.1em 0.10em #000
 }
 
+.boton--secundario i{
+    font-size: 35px;
+}
+
+.icon__contacto{
+    display: block;
+    text-align: center;
+    font-size: 55px;
+    text-decoration: none;
+    color: var(--primario);
+    transition: all 0.5s ease;
+}
+
+.icon__contacto:hover{
+    color: var(--negro);
+    font-size: 60px;
+}
 
   /**------------------- FACTURACIÓN ------------------**/
 
