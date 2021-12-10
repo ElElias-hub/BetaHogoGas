@@ -8,7 +8,6 @@
     --blanco: #ffff;
     --negro: #000;
     --gris: #D0D0D0;
-
 }
 
 
@@ -26,6 +25,15 @@ body{
     font-size: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
+}
+
+.page__bo::-webkit-scrollbar{
+    width: 10px;
+    
+}
+.page__bo::-webkit-scrollbar-thumb{
+    background-color: var(--secundario);
+    border-radius: 7px;
 }
 
   /**------------------- -GLOBALES ------------------**/
@@ -103,8 +111,8 @@ img{
         margin-top: -3rem;
     }
     .header_texto{
-           padding: 10rem;
-       }
+        padding: 10rem;
+    }
     .header_texto-titulo{
         margin-top: 7rem;
     }
@@ -369,6 +377,7 @@ hr{
 
   /**------------------- CONTACTO ------------------**/
 
+
 .contacto-bg{
     background-image: url(../img/banner02.jpg);
     height: 40rem;
@@ -466,7 +475,7 @@ hr{
     font-size: 60px;
 }
 
-  /**------------------- FACTURACIÓN ------------------**/
+/**------------------- FACTURACIÓN ------------------**/
 
 .facturacion__titulo{
     text-align: center;
@@ -494,12 +503,14 @@ hr{
 
 .gas__info{
     font-weight: normal;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .gas_label,
 .gas__info{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .boton--secundario{

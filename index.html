@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOGOGAS</title>
-    <link rel="icon" type="image/png" href="img/IconoHogoGroup.png">
+    <link rel="icon" type="image/png" href="img/hogoweb_icon.png">
 
     <meta name="description" content="Página web de Hogogas, empresa dedicada
      a la venta de gasolina y combustible diésel.">
 
+    <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-
-     <!--Prefetch-->
+     <!-- === PREFETCH === -->
      <link rel="prefetch" href="facturacion.html" as="document">
 
-     <!--PRELOAD-->
+     <!-- === PRELOAD === -->
     <link rel="preload" href="css/normalize.css" as="styyle">
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -30,22 +27,42 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <!-- Script: Animated entrance -->
+    <!-- === Script: Animated entrance === -->
     <script src='https://d33wubrfki0l68.cloudfront.net/js/fe6311b3c294cba469a3939f21603640522c41e5/aquamarine/js/animate-in.js'></script>
-    <!--Animated entrance -->
+    <!-- === Animated entrance === -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- === JQUERY === -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- === COUNTER-UP/WAYPOINTS === -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
 
 
 
 </head>
-<body>
+<body class="page__bo">
     
+    <!-- === HEADER === -->
+
     <header class="header">
         
+        <!-- === MENU === -->
+
         <div class="">
             <div class="barra">
                 <a href="index.html" class="logo">
-                    <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="370px" height="97px">
+                    <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="370px" height="97px"
+                    data-aos="zoom-in">
                 </a>
 
                 <nav class="navegacion">
@@ -56,6 +73,9 @@
 
             </div>
         </div>
+
+        <!-- === END MENU === -->
+        <!-- === HOME SECTION === -->
 
         <div class="header_texto" id="HM">
             <br>
@@ -110,7 +130,12 @@
 
         </div>
 
+        <!-- === END HOME SECTION === -->
+
     </header>
+
+    <!-- === END HEADER === -->
+    <!-- === ABOUT SECTION === -->
 
 
     <div class="contenedor contenido_principal" >
@@ -131,11 +156,13 @@
             Misión
             Somos una empresa del sector petrolífero, dedicada a la venta de gasolinas y combustible diésel, con el 
             objetivo principal de satisfacer las necesidades de los consumidores ofreciendo calidad en el servicio, a
-            través de personal capacitado, eficiente y eficaz que garantiza la preferencia y lealtad de nuestros clientes.</p>
-
+            través de personal capacitado, eficiente y eficaz que garantiza la preferencia y lealtad de nuestros clientes.
+        </p>
 
     </div>
 
+    <!-- === END ABOUT SECTION === -->
+    <!-- === PRECIOS SECTION === -->
 
     <div class="contenedor">
         <hr>
@@ -149,7 +176,7 @@
                 <div class="iconosp icon__colora">
                     
                       <h4 class="iconos__font">$</h4>
-                      <h4 class="iconos__font counter">34.78</h4>
+                      <h4 class="iconos__font counter">20.75</h4>
                 </div>
                 <img src="img/pemex magna.png" alt="" width="200" height="60">
             </div>
@@ -158,7 +185,7 @@
                 <div class="iconosp icon__colorb">
                    
                       <h4 class="iconos__font">$</h4>
-                      <h4 class="iconos__font counter">34.78</h4>
+                      <h4 class="iconos__font counter">22.75</h4>
                 </div>
                 <img src="img/pemex premium.png" alt="" width="200" height="60">
             </div>
@@ -167,7 +194,7 @@
                 <div class="iconosp icon__colorc">
                     
                       <h4 class="iconos__font">$</h4>
-                      <h4 class="iconos__font counter" >34.78</h4>
+                      <h4 class="iconos__font counter" >22.28</h4>
                 </div>
                 <img src="img/pemex diesel.png" alt="" width="200" height="60">
             </div>            
@@ -188,7 +215,7 @@
                 <div class="iconosp icon__colora">
                     
                       <h4 class="iconos__font">$</h4>
-                      <h4 class="iconos__font counter" >34.78</h4>
+                      <h4 class="iconos__font counter" >20.59</h4>
                 </div>
                 <img src="img/pemex magna.png" alt="" width="200" height="60">
             </div>
@@ -197,7 +224,7 @@
                 <div class="iconosp icon__colorb">
                     
                       <h4 class="iconos__font">$</h4>
-                      <h4 class="iconos__font counter" >34.78</h4>
+                      <h4 class="iconos__font counter" >23.75</h4>
                 </div>
                 <img src="img/pemex premium.png" alt="" width="200" height="60">
             </div>
@@ -206,7 +233,7 @@
                 <div class="iconosp icon__colorc">
                     
                       <h4 class="iconos__font">$</h4>
-                      <h4 class="iconos__font counter" >34.78</h4>
+                      <h4 class="iconos__font counter" >21.85</h4>
                 </div>
                 <img src="img/pemex diesel.png" alt="" width="200" height="60">
             </div>            
@@ -215,6 +242,9 @@
 
     </div>
 
+    <!-- === END PRECIOS SECTION === -->
+    <!-- === FOOTER === -->
+
     <footer class="footer">
         <div class="contenedor">
             
@@ -222,6 +252,8 @@
                 <a href="index.html" class="logo">
                     <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="200px" height="50px">
                 </a>
+
+                
 
                 <nav class="navegacionf">
                     <a href="#HM" class="navegacion_enlacef">INICIO</a>
@@ -243,25 +275,23 @@
                 </nav>
 
             </div>
+
+            <h5 class="no-margin no-padding centrar-texto" style="text-decoration: none; color:#fff;" target="_blank">Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script>
+                All rights reserved | HOGOGROUP S.A. DE C.V.
+            </h5>
+            
         </div>
     </footer>
 
-    <script>
-        $(document).ready(function(){
-          $(".counter").counterUp({
-            delay:10,
-            time:900
-          })
-        })
-    </script>
-      
+    <!-- === END FOOTER === -->
 
     <!-- -https://michalsnik.github.io/aos/_- -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
 			easing: 'ease-out-back',
-			duration: 1200
+			duration: 1400
 		});
   </script>
 

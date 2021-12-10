@@ -5,32 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTO</title>
-    <link rel="icon" type="image/png" href="img/IconoHogoGroup.png">
+    <link rel="icon" type="image/png" href="img/hogoweb_icon.png">
 
     
     <meta name="description" content="Página web de Hogogas, empresa dedicada
      a la venta de gasolina y combustible diésel.">
 
+     <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- === ICONOS === -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--PRELOAD-->
+    <!-- === PRELOAD === -->
     <link rel="preload" href="css/normalize.css" as="styyle">
     <link rel="stylesheet" href="css/normalize.css">
      
     <link rel="preload" href="css/style.css as="styyle">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+    <!-- === Script: Animated entrance === -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/fe6311b3c294cba469a3939f21603640522c41e5/aquamarine/js/animate-in.js'></script>
+    <!-- === Animated entrance === -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body class="page__bo">
+
+    <!-- === HEADER === -->
     <header class="headerr">
+        <!-- === MENU === -->
         <div class="">
             <div class="barra">
                 <a href="index.html" class="logo">
-                    <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="370px" height="97px">
+                    <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="370px" height="97px"
+                    data-aos="zoom-in">
                 </a>
 
                 <nav class="navegacion">
@@ -41,8 +52,11 @@
 
             </div>
         </div>
+        <!-- === END MENU === -->
     </header>
-
+    
+    <!-- === END HEADER === -->
+    <!-- === FORMULARIO === -->
 
     <main class="contenedor">
 
@@ -92,17 +106,20 @@
 
     </main>
 
+    <!-- === END FORMULARIO === -->
+    <!-- === CONTACTO === -->
 
 
     <div class="contenedor">
 
         <!--<h3 class="centrar-texto  facturacion__titulo">FACTURACIÓN</h3>-->
         
-        <div class="gasolinera" data-aos="fade-up">
+        <div class="gasolinera">
 
             <div class="gas__imagen">
                 <picture>
-                    <img loading="lazy" src="img/qr_tel_chalco.png" alt="imagen blog">
+                    <img loading="lazy" src="img/ubbicacion_chalco_qr.png" alt="Imagen QR Chalco"
+                    data-aos="fade-up" width="300px" height="300px">
                 </picture>
             </div>
 
@@ -111,13 +128,11 @@
                 <p class="gas__descripcion centrar-texto">   
                     Autopista México - Puebla 267, San Marcos Huixtoco, 56643 Méx.
                 </p>
-                <!--<p class="gas_label">
-                    TELEFONO DE CONTACTO:
-                    <span class="gas__info">
-                        <a href="tel:5569689817">+52 1 55 6968 9817</a> 
-                    </span>
-                </p>-->
-                <a href="" class="icon__contacto">
+
+                <p class="gas__info">
+                    Escanea el QR para saber nuestra ubicación o contáctanos por WhatsApp.
+                </p>
+                <a href="https://api.whatsapp.com/send/?phone=5215569689817&text&app_absent=0" class="icon__contacto" target="_blank">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 </a>
                  
@@ -127,11 +142,12 @@
 
         <br>
 
-        <div class="gasolinera" data-aos="fade-down">
+        <div class="gasolinera" >
 
             <div class="gas__imagen">
                 <picture>
-                    <img loading="lazy" src="img/qr_tel_Ixtapaluca.png" alt="imagen blog">
+                    <img loading="lazy" src="img/ubicacion_ixta_qr.png" alt="Imagen QR Ixtapaluca"
+                    data-aos="fade-down" width="300px" height="300px">
                  </picture>
             </div>
 
@@ -140,16 +156,12 @@
                 <p class="gas__descripcion centrar-texto">
                     Autopista México - Puebla 400, La Cañada, 56589 Jorge Jiménez Cantú, Méx.
                 </p>
-                <!--<p class="gas_label">
-                    TELEFONO DE CONTACTO:
-                    <span class="gas__info">
-                        <a href="tel:+52 1 55 6968 2864">5569682864</a> 
-                    </span>
-                </p>-->
-                <a href="" class="boton boton--secundario">
+                <p class="gas__info">
+                    Escanea el QR para saber nuestra ubicación o contáctanos por WhatsApp.
+                </p>
+                <a href="https://api.whatsapp.com/send/?phone=5215569682864&text&app_absent=0" class="icon__contacto" target="_blank">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 </a>
-            
                  
             </div><!--gasolinera info-fin-->
            
@@ -157,7 +169,8 @@
 
     </div>   
 
-    
+    <!-- === END CONTACTO === -->
+    <!-- === FOOTER === -->
 
     <footer class="footer">
         <div class="contenedor">
@@ -187,9 +200,25 @@
                 </nav>
 
             </div>
+
+            <h5 class="no-margin no-padding centrar-texto" style="text-decoration: none; color:#fff;" target="_blank">Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script>
+                All rights reserved | HOGOGROUP S.A. DE C.V.
+            </h5>
+
         </div>
     </footer>
 
+    <!-- === END FOOTER === -->
+
+<!-- === ANIMACIÓN === -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+          easing: 'ease-out-back',
+          duration: 350
+      });
+</script>
 
     <script src="js/modernizr.js"></script>
     <script src="js/menu.js"></script>

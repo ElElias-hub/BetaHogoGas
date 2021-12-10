@@ -5,43 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FACTURACIÓN</title>
-    <link rel="icon" type="image/png" href="img/IconoHogoGroup.png">
+    <link rel="icon" type="image/png" href="img/hogoweb_icon.png">
 
     
     <meta name="description" content="Página web de Hogogas, empresa dedicada
      a la venta de gasolina y combustible diésel.">
 
+    <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <!--Prefetch-->
+    <!-- === PREFETCH === -->
     <link rel="prefetch" href="http://hogoe13750.ddns.net:8088/controlGasfe/" as="document">
-    <!--Prefetch-->
     <link rel="prefetch" href="http://hogoe13750.ddns.net:8080/ControlGasFE/FEinicio.aspx" as="document">
 
 
-    <!--PRELOAD-->
+    <!-- === PRELOAD === -->
     <link rel="preload" href="css/normalize.css" as="styyle">
     <link rel="stylesheet" href="css/normalize.css">
      
     <link rel="preload" href="css/style.css as="styyle">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Script: Animated entrance -->
+    <!-- === Script: Animated entrance === -->
     <script src='https://d33wubrfki0l68.cloudfront.net/js/fe6311b3c294cba469a3939f21603640522c41e5/aquamarine/js/animate-in.js'></script>
-    <!--Animated entrance -->
+    <!-- === Animated entrance === -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
-<body>
+<body class="page__bo">
 
-
+    <!-- === HEADER === -->
     <header class="headerr">
+
+        <!-- === MENU === -->
         <div class="">
             <div class="barra">
                 <a href="index.html" class="logo">
-                    <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="370px" height="97px">
+                    <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="370px" height="97px"
+                    data-aos="zoom-in">
                 </a>
 
                 <nav class="navegacion">
@@ -52,8 +55,11 @@
 
             </div>
         </div>
+        <!-- === END MENU === -->
     </header>
 
+    <!-- === END HEADER === -->
+    <!-- === GASOLINERAS SECTION === -->
 
     <div class="contenedor">
 
@@ -63,7 +69,7 @@
 
             <div class="gas__imagen">
                 <picture>
-                    <img loading="lazy" src="img/Gas_Chalco.PNG" alt="imagen blog">
+                    <img loading="lazy" src="img/Gas_Chalco.PNG" alt="Foto de Gasolinera de Chalco">
                  </picture>
             </div>
 
@@ -77,7 +83,7 @@
                         DALE CLICK AL BOTON FACTURAR PARA PORDER REALIZAR TU FACTURA
                     </span>
                 </p>
-                <a href="http://hogoe13750.ddns.net:8088/controlGasfe/" class="boton boton--secundario">facturar</a>
+                <a href="http://hogoe13750.ddns.net:8088/controlGasfe/" class="boton boton--secundario" target="_blank">facturar</a>
             </div><!--gasolinera info-fin-->
            
         </div><!--gasolinera-fin-->
@@ -88,7 +94,7 @@
 
             <div class="gas__imagen">
                 <picture>
-                    <img loading="lazy" src="img/Gas_Ixtapaluca.PNG" alt="imagen blog">
+                    <img loading="lazy" src="img/Gas_Ixtapaluca.PNG" alt="Foto de Gasolinera de Ixtapaluca">
                  </picture>
             </div>
 
@@ -102,13 +108,15 @@
                         DALE CLICK AL BOTON FACTURAR PARA PORDER REALIZAR TU FACTURA
                     </span>
                 </p>
-                <a href="http://hogoe13750.ddns.net:8080/ControlGasFE/FEinicio.aspx" class="boton boton--secundario">facturar</a>
+                <a href="http://hogoe13750.ddns.net:8080/ControlGasFE/FEinicio.aspx" class="boton boton--secundario" target="_blank">facturar</a>
             </div><!--gasolinera info-fin-->
            
         </div><!--gasolinera-fin-->
 
     </div>    
 
+    <!-- === END GASOLINERAS SECTION === -->
+    <!-- === FOOTER === -->
 
     <footer class="footer">
         <div class="contenedor">
@@ -138,12 +146,18 @@
                 </nav>
 
             </div>
+
+            <h5 class="no-margin no-padding centrar-texto" style="text-decoration: none; color:#fff;" target="_blank">Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script>
+                All rights reserved | HOGOGROUP S.A. DE C.V.
+            </h5>
+
         </div>
     </footer>
 
+    <!-- === END FOOTER === -->
 
-
-    <!-- -https://michalsnik.github.io/aos/_- -->
+    <!-- === ANIMACIÓN === -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

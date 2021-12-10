@@ -5,31 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESTACIONES</title>
-    <link rel="icon" type="image/png" href="img/IconoHogoGroup.png">
+    <link rel="icon" type="image/png" href="img/hogoweb_icon.png">
 
     <meta name="description" content="Página web de Hogogas, empresa dedicada
      a la venta de gasolina y combustible diésel.">
 
+    <!-- === FONTS === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 
-    <!--PRELOAD-->
+    <!-- === PRELOAD === -->
     <link rel="preload" href="css/normalize.css" as="styyle">
     <link rel="stylesheet" href="css/normalize.css">
      
     <link rel="preload" href="css/style.css as="styyle">
     <link rel="stylesheet" href="css/style.css">
 
-</head>
-<body>
+    <!-- === Script: Animated entrance === -->
+    <script src='https://d33wubrfki0l68.cloudfront.net/js/fe6311b3c294cba469a3939f21603640522c41e5/aquamarine/js/animate-in.js'></script>
+    <!-- === Animated entrance === -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+
+</head>
+<body class="page__bo">
+
+    <!-- === HEADER === -->
     <header class="headerr">
+        <!-- === MENU === -->
         <div class="">
             <div class="barra">
                 <a href="index.html" class="logo">
-                    <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="370px" height="97px">
+                    <img loading="lazy" src="img/HogoGroupLogo.png" alt="Logo de HogoGroup" class="header__logo" width="370px" height="97px"
+                    data-aos="zoom-in">
                 </a>
 
                 <nav class="navegacion">
@@ -40,9 +50,11 @@
 
             </div>
         </div>
+        <!-- === END MENU === -->
     </header>
+    <!-- === END HEADER === -->
 
-
+    <!-- === MAP === -->
     <div class="contenedor contenido_estaciones" >
 
         <h2 class="precio__titulo">búsqueda de estaciones hogogroup</h2>
@@ -52,10 +64,9 @@
         </div>
         
     </div>
+     <!-- === END MAP === -->
 
-
-
-
+     <!-- === FOOTER === -->
 
     <footer class="footer">
         <div class="contenedor">
@@ -85,10 +96,25 @@
                 </nav>
 
             </div>
+
+            <h5 class="no-margin no-padding centrar-texto" style="text-decoration: none; color:#fff;" target="_blank">Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script>
+                All rights reserved | HOGOGROUP S.A. DE C.V.
+            </h5>
+
         </div>
     </footer>
 
+    <!-- === END FOOTER === -->
 
+<!-- === ANIMACIÓN === -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+          easing: 'ease-out-back',
+          duration: 1200
+      });
+</script>
 
     <script src="js/modernizr.js"></script>
     <script src="js/menu.js"></script>
