@@ -10,8 +10,9 @@
     $contenido="Nombre: " . $nombre . "\nCorreo: " . $email . "\nEnviado el " . date('d/m/Y', time() .
     "\nTelefono: " . $tel . "\nMensaje: " . $message);
 
-    mail($destino,$asunto,$contenido, utf8);
-    print "<script>alert(\"Mensaje enviado.\");window.location='../index.html';</script>";
+    mail($destino,$asunto,utf8_decode($contenido));
+    header("Location:../index.html");
+    //print "<script>alert(\"Mensaje enviado.\");window.location='./index.html';</script>";
 
 
 ?>
