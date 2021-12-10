@@ -67,27 +67,27 @@
         </div>
 
 
-        <form class="formulario" action="php/enviar.php" method="post">
+        <form class="formulario" name="Contacto" action="php/enviar.php" method="post">
             <div class="campo">
                 <label class="campo__label" 
                 for="bname">Nombre</label>
                 <input 
                 class="campo__field"
-                id="bname" type="text" placeholder="Tu Nombre">
+                id="bname" name="bname" type="text" placeholder="Tu Nombre">
             </div>
             <div class="campo">
                 <label class="campo__label" 
                 for="btel">Telefono</label>
                 <input 
                 class="campo__field"
-                id="btel" type="tel" placeholder="Tu Telefono">
+                id="btel" name="btel" type="tel" placeholder="Tu Telefono">
             </div>
             <div class="campo">
                 <label class="campo__label" 
                 for="bemail">Email</label>
                 <input 
                 class="campo__field"
-                id="bemail" type="email" placeholder="Tu Email">
+                id="bemail" type="email" name="bemail" placeholder="Tu Email">
 
             </div>
             <div class="campo">
@@ -95,7 +95,7 @@
                 for="txtmensaje">Mensaje</label>
                 <textarea 
                 class="campo__field campo__field--textarea"
-                name="" id="txtmensaje" cols="20" rows="5"></textarea>
+                name="" id="txtmensaje" name="txtmensaje" cols="20" rows="5"></textarea>
 
             </div>
 
