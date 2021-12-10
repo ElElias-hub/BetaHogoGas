@@ -22,7 +22,7 @@ html {
 }
 
 body{
-    font-size: var(--fuenteParrafos);
+    font-size: var(--fuenteHeading);
     font-size: 1.6rem;
     line-height: 2;
 }
@@ -89,7 +89,7 @@ img{
 
 
 .header{
-    height: 95rem;
+    height: 103rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
