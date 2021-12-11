@@ -14,7 +14,7 @@
 
     $mail=mail($destino,$asunto,$contenido,$cabecerasCliente);
     if($mail){
-        header("Location:../index.php");
+        print "<script>alert(\"Registro exitoso. Proceda a logearse\");window.location='../Cuenta.php';</script>";
     }
 
 ?>

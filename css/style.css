@@ -215,6 +215,11 @@ img{
     scroll-snap-stop: always;
 }
 
+.contenido_secundario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
 @media (min-width: 768px){
     .contenido_principal{
         display: grid;
@@ -228,6 +233,13 @@ img{
     .entrada__imagen{
         text-align: center;
         margin-top: 7rem;
+    }
+    .contenido_secundario{
+        
+        column-gap: 2rem;
+        width: 100%;
+        padding: 5rem;
+        background-color: var(--blanco);
     }
 }
 
@@ -308,6 +320,56 @@ hr{
     border: 2px solid var(--secundario); 
     border-radius: 300px/10px;  
     text-align: center;
+}
+
+/** ----------- SERVICIOS ----------------**/
+
+.text-service{
+    text-align: center;
+    color: var(--primario);
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+.serviciosb {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: grid;
+    grid-template-columns: 24% 24%
+}
+
+.iconosb {
+    display: flex;
+    height: 90px;
+    width: 90px;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--azulgris);
+    border-radius: 50%;
+}
+
+@media (min-width:768px) {
+    .serviciosb {
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        column-gap: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+/** ----------- MAP ----------------**/
+
+iframe{
+    width:340px;
+    height:380px;
+}
+
+@media (min-width: 768px) {
+    iframe{
+        width:680px;
+        height:480px;
+    }
 }
 
 /** -----------FOOTER------------- **/
@@ -459,6 +521,9 @@ hr{
 
 .boton--secundario i{
     font-size: 35px;
+    top: 3px;
+    position: relative;
+    margin-left: 7px;
 }
 
 .icon__contacto{
@@ -496,13 +561,17 @@ hr{
     }
 }
 
+.gas__descripcion{
+    font-family: var(--fuenteHeading);
+}
+
 .gas__label{
     font-family: var(--fuenteHeading);
     font-weight: bold;
 }
 
 .gas__info{
-    font-weight: normal;
+    font-family: var(--fuenteHeading);
     text-transform: uppercase;
     font-weight: bold;
 }
