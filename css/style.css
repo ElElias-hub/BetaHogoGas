@@ -95,7 +95,7 @@ p{
 
 
 .header{
-    height: 103rem;
+    height: 105rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -142,6 +142,11 @@ p{
         background-color: rgb(18 42 89 / 75%);
         padding: 15px;
     }
+    .barra.active>.logo img{
+        width:255px; 
+        height:77px;
+        transition: all 0.5s ease !important;
+    }
 }
 
 .logo{
@@ -149,7 +154,7 @@ p{
     justify-content: center;
 }
 .header__logo{
-    margin: 1rem 1.5rem;
+    margin: 1rem 1.2rem;
     
 }
 
@@ -428,7 +433,7 @@ iframe{
   /**------------------- ESTACIONES ------------------**/
 
 .headerr{
-    height: 28rem;
+    height: 35rem;
     background-color: var(--primario);
 }
 
